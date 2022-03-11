@@ -110,6 +110,7 @@ header a {
   margin-right: 8px;
   border: #ffffff solid 3px;
   border-radius: 10px;
+  box-shadow: #000000 2px 4px 5px;
 }
 
 header h1 {
@@ -126,4 +127,12 @@ header h2 {
   font-family: SimsSans;
   color: #4276b7;
   text-shadow: 3px -2px #a6e329;
+}
+
+input:focus {
+  border: #21b96b 2px solid;
+}
+
+button {
+  box-shadow: #000000 2px 4px 5px;
 }
