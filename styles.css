@@ -26,7 +26,7 @@ body {
 
 h1 {
   color: #a6e329;
-  font-size: 42px;
+  font-size: 34px;
   font-family: SimsSansSC;
   grid-column-start: 1;
   grid-column-end: 5;
@@ -35,8 +35,8 @@ h1 {
 p {
   margin-top: 8px;
   margin-bottom: 8px;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .button {
@@ -46,10 +46,15 @@ p {
   color: #ffffff;
   text-decoration: none;
   font-family: "SimsSans";
-  font-size: 24px;
+  font-size: 18px;
   align-self: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.underlined {
+  text-decoration: underline;
 }
 
 header,
@@ -63,12 +68,14 @@ footer {
 
 header {
   height: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   border-bottom: 3px dotted #a6e329;
 }
 
 #header-banner {
   display: none;
+  width: 100%;
+  place-self: center;
 }
 
 #title-container {
@@ -79,15 +86,19 @@ header {
 
 #title-container h1 {
   font-family: SimsSans;
-  font-size: 58px;
+  font-size: 54px;
   letter-spacing: 1.5px;
   text-align: left;
   color: #4276b7;
   text-shadow: 3px -2px 0 #a6e329;
 }
 
-header h2 {
+#title-container h2 {
   display: none;
+  font-size: 24px;
+  color: #4276b7;
+  text-shadow: 3px -2px 0 #a6e329;
+  text-align: left;
 }
 
 header a {
@@ -101,6 +112,15 @@ header a {
   border: 3px solid #ffffff;
   border-radius: 10px;
   align-self: center;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#login-button {
+  display: none;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  width: 100%;
+  vertical-align: middle;
 }
 
 header a img {
@@ -127,7 +147,26 @@ main p {
 }
 
 .signup-form {
-  display: none; 
+  display: none;
+  margin-top: 40px;
+}
+
+.signup-form label {
+  font-family: "Barlow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.signup-form input {
+  width: 100%;
+  border: 3px solid #4276b7;
+  border-radius: 8px;
+}
+
+.signup-form .button {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
 }
 
 footer {
@@ -143,7 +182,7 @@ footer p {
 footer a{
   display: block;
   color: #a6e329;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 #github-link,
@@ -160,4 +199,205 @@ footer a{
 #contact-link{
   grid-column-start: 4;
   grid-column-end: 5;
+}
+
+@media only screen and (min-width: 600px) {
+  header,
+  main,
+  footer {
+    margin: 0 32px 0 32px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 16px;
+  }
+
+  h1 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  
+  header {
+    height: 140px;
+    margin-bottom: 15px;
+  }
+
+  #title-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  
+  #title-container h2{
+    display: block;
+  }
+
+  #login-button {
+    display: block;
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+
+  #login-mobile-button {
+    display: none;
+  }
+
+  main p {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+
+  #signup-sim {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  #signup-button {
+    display: none;
+  }
+
+  .signup-form {
+    display: block;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-start: 2;
+    grid-column-end: 6;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  #sign-up-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+  }
+
+  .signup-form label {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .signup-form input {
+    width: 100%;
+  }
+
+  .signup-form .button {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+
+  footer p {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+
+  #twitter-link {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #cb-link {
+    display: block;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  #contact-link {
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+}
+
+@media only screen and (min-width:1420px) {
+  h1 {
+    grid-column-start: 2;
+    grid-column-end: 14;
+  }
+  
+  header,
+  main,
+  footer {
+    margin: 0 70px 0 70px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    column-gap: 16px;
+  }
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 15;
+    height: 225px;
+    margin-bottom: 15px;
+  }
+
+  #title-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  #header-banner {
+    display: block;
+    grid-column-start: 5;
+    grid-column-end: 13;
+  }
+
+  #login-button {
+    grid-column-start: 13;
+    grid-column-end: 15;
+  }
+
+  main p {
+    grid-column-start: 2;
+    grid-column-end: 14;
+  }
+
+  #signup-sim {
+    grid-column-start: 3;
+    grid-column-end: 7;
+  }
+
+  .signup-form {
+    grid-column-start: 9;
+    grid-column-end: 13;
+  }
+
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 15;
+  }
+
+  footer p {
+    grid-column-start: 1;
+    grid-column-end: 15;
+  }
+
+  #twitter-link {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #github-link {
+    display: block;
+    grid-column-start: 4;
+    grid-column-end: 6;
+  }
+
+  #pf-link {
+    display: block;
+    grid-column-start: 7;
+    grid-column-end: 9;
+  }
+
+  #cb-link {
+    display: block;
+    grid-column-start: 10;
+    grid-column-end: 12;
+  }
+
+  #contact-link {
+    grid-column-start: 13;
+    grid-column-end: 15;
+  }
 }
