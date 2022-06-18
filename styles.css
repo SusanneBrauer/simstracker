@@ -24,117 +24,140 @@ body {
   color: #ffffff;
 }
 
-h2 {
+h1 {
   color: #a6e329;
-  font-size: 24px;
+  font-size: 42px;
   font-family: SimsSansSC;
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 
 p {
   margin-top: 8px;
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.button {
+  background-color: #21b96b;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "SimsSans";
+  font-size: 24px;
+  align-self: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header,
+main,
+footer {
+  margin: 0 24px 0 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 8px;
-  margin-bottom: 15px;
-  min-height: 110px;
-  border-bottom: #a6e329 3px dotted;
-}
-
-main {
-  width: 80%;
-  margin: 20px auto;
-}
-
-form {
-  width: 50%;
-  min-width: 350px;
-  margin: 15px auto;
-  line-height: 2;
-}
-
-input {
-  width: 100%;
-}
-
-button {
-  background-color: #21b96b;
-  color: #ffffff;
-  padding: 8px;
-  border: #ffffff solid 3px;
-  border-radius: 10px;
-  margin-top: 15px;
-}
-
-footer {
-  border-top: #a6e329 3px dotted;
-  padding: 15px;
-}
-
-a {
-  color: #a6e329;
-  display: inline-block;
-  width: 150px;
-}
-
-.underlined {
-  text-decoration: underline;
-}
-
-#title-container {
-  display: inline-block;
-  text-align: left;
-  width: 25%;
-  color: #4276b7;
-  margin-left: 8px;
+  height: 100px;
+  margin-bottom: 40px;
+  border-bottom: 3px dotted #a6e329;
 }
 
 #header-banner {
-  display: inline-block;
-  width: 55%;
-  border-radius: 20px;
+  display: none;
+}
+
+#title-container {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  align-self: center;
+}
+
+#title-container h1 {
+  font-family: SimsSans;
+  font-size: 58px;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #4276b7;
+  text-shadow: 3px -2px 0 #a6e329;
+}
+
+header h2 {
+  display: none;
 }
 
 header a {
-  display: inline-block;
-  font-family: SimsSans;
-  font-size: 18px;
-  font-weight: bold;
+  display: block;
+  height: 48px;
+  width: 79px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  place-self: center;
   background-color: #21b96b;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 6px 0;
-  margin-right: 8px;
-  border: #ffffff solid 3px;
+  border: 3px solid #ffffff;
   border-radius: 10px;
-  box-shadow: #000000 2px 4px 5px;
+  align-self: center;
 }
 
-header h1 {
-  font-size: 36px;
+header a img {
+  vertical-align: middle;
 }
 
-header h2 {
-  font-size: 18px;
-  margin-top: 10px;
+main p {
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 
-header h1,
-header h2 {
-  font-family: SimsSans;
-  color: #4276b7;
-  text-shadow: 3px -2px #a6e329;
+#signup-sim {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  width: 100%;
+  margin-top: 40px;
 }
 
-input:focus {
-  border: #21b96b 2px solid;
+#signup-button {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-button {
-  box-shadow: #000000 2px 4px 5px;
+.signup-form {
+  display: none; 
+}
+
+footer {
+  border-top: 3px dotted #a6e329;
+  padding-bottom: 15px;
+}
+
+footer p {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+footer a{
+  display: block;
+  color: #a6e329;
+  font-size: 24px;
+}
+
+#github-link,
+#pf-link,
+#cb-link {
+  display: none;
+}
+
+#twitter-link {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#contact-link{
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
