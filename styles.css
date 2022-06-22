@@ -169,6 +169,39 @@ main p {
   margin-top: 15px;
 }
 
+.signup-form-mobile {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin: 200px 0;
+}
+.signup-form-mobile #sign-up-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+
+.signup-form-mobile label {
+  font-family: "Barlow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.signup-form-mobile input {
+  width: 100%;
+  border: 3px solid #4276b7;
+  border-radius: 8px;
+}
+
+.signup-form-mobile .button {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
 footer {
   border-top: 3px dotted #a6e329;
   padding-bottom: 15px;
