@@ -169,18 +169,21 @@ main p {
   margin-top: 15px;
 }
 
-.signup-form-mobile {
+.signup-form-mobile,
+.login-form {
   grid-column-start: 1;
   grid-column-end: 5;
   margin: 200px 0;
 }
-.signup-form-mobile #sign-up-form {
+.signup-form-mobile #sign-up-form,
+.login-form {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
 }
 
-.signup-form-mobile label {
+.signup-form-mobile label,
+.login-form label {
   font-family: "Barlow", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -188,13 +191,15 @@ main p {
   grid-column-end: 5;
 }
 
-.signup-form-mobile input {
+.signup-form-mobile input,
+.login-form input {
   width: 100%;
   border: 3px solid #4276b7;
   border-radius: 8px;
 }
 
-.signup-form-mobile .button {
+.signup-form-mobile .button,
+.login-form .button {
   display: block;
   width: 100%;
   margin-top: 15px;
@@ -287,7 +292,8 @@ footer a{
     display: none;
   }
 
-  .signup-form {
+  .signup-form,
+  .login-form {
     display: block;
     grid-template-columns: repeat(4, 1fr);
     grid-column-start: 2;
@@ -302,16 +308,19 @@ footer a{
     width: 100%;
   }
 
-  .signup-form label {
+  .signup-form label,
+  .login-form label {
     grid-column-start: 1;
     grid-column-end: 5;
   }
 
-  .signup-form input {
+  .signup-form input,
+  .login-form input {
     width: 100%;
   }
 
-  .signup-form .button {
+  .signup-form .button,
+  .login-form .button {
     grid-column-start: 2;
     grid-column-end: 4;
   }
@@ -394,6 +403,11 @@ footer a{
   .signup-form {
     grid-column-start: 9;
     grid-column-end: 13;
+  }
+
+  .login-form {
+    grid-column-start: 5;
+    grid-column-end: 11;
   }
 
   footer {
