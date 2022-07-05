@@ -32,11 +32,72 @@ h1 {
   grid-column-end: 5;
 }
 
+h2 {
+  color: #ffffff;
+  font-size: 28px;
+  font-family: SimsSans;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-top: 30px;
+}
+
 p {
   margin-top: 8px;
   margin-bottom: 8px;
   font-size: 18px;
   line-height: 30px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+table th {
+  background-color: #21b96b;
+  
+}
+
+table th,
+table td {
+  border: 3px solid #ffffff;
+  border-top: 0;
+  border-right: 0;
+}
+
+table th {
+  border-top: 3px solid #ffffff;
+}
+
+table th,
+table td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+table tr:nth-child(even) td {
+  background-color: rgba(66, 118, 183, 0.64);
+}
+
+table td:last-child,
+table th:last-child {
+  border-right: 3px solid #ffffff;
+}
+
+table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
 }
 
 .button {
@@ -205,6 +266,22 @@ main p {
   margin-top: 15px;
   grid-column-start: 2;
   grid-column-end: 4;
+}
+
+#profile-button,
+#new-household-button {
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-top: 30px;
+}
+
+#household-table,
+#simmer-table {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 footer {

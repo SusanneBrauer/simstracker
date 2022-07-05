@@ -9,79 +9,89 @@
     </head>
     <body>
         <header>
-            <div id="title-container">
-              <h1>Sims Tracker</h1>
-              <h2>
-                <span class="underlined">THE</span> place for to keep track of all of
-                you Sims details!
-              </h2>
-            </div>
-            <img src="images/banner.png" id="header-banner" />
-            <a href="#">Login</a>
-          </header>
+          <div id="title-container">
+            <h1>Sims Tracker</h1>
+            <h2>
+              <span class="underlined">THE</span> place for to keep track of all of
+              you Sims details!
+            </h2>
+          </div>
+          <img src="images/banner.png" id="header-banner" />
+          <a href="#" id="login-mobile-button"><img src="images/Icons/user-x.svg" alt=""></a>
+          <a href="#" id="login-button" class="button">Login</a>
+        </header>
 
-          <main>
-              <h2>Welcome DreamingSnoozles</h2>
-              <section>
-                  <h3>Your Tracked Households</h3>
-                  <table>
-                      <tr>
-                          <th>Household Name</th>
-                          <th>Number of Sims</th>
-                          <th>Last Updated</th>
-                      </tr>
-                      <tr>
-                          <td><a href="#">Henderson</a></td>
-                          <td>3</td>
-                          <td>10/03/2022</td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">Jensen</a></td>
-                        <td>5</td>
-                        <td>04/03/2022</td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">Domer</a></td>
-                        <td>1</td>
-                        <td>28/01/2022</td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">Fenlly</a></td>
-                        <td>2</td>
-                        <td>17/01/2022</td>
-                      </tr>
-                  </table>
-              </section>
+        <main>
+          <h1>Dashboard</h1>
 
-              <section>
-                  <h3>Simmers you follow</h3>
-                  <table>
-                    <tr>
-                        <td><a href="#">Ruby</a></td>
-                        <td>(last update: 10/03/2022)</td>
-                    </tr>
-                    <tr>
-                      <td><a href="#">Mozwolf</a></td>
-                      <td>(last update: 04/03/2022)</td>
-                    </tr>
-                    <tr>
-                      <td><a href="#">Domer</a></td>
-                      <td>(last update: 28/01/2022)</td>
-                    </tr>
-                    <tr>
-                      <td><a href="#">Fenlly</a></td>
-                      <td>(last update: 17/01/2022)</td>
-                    </tr>
-                </table>
-              </section>
-          </main>
+          <a href="#" class="button" id="profile-button">Profile</a>
+          <a href="#" class="button" id="new-household-button">Create a new Household</a>
 
-          <footer>
-            <p>Work in progress by Susanne Brauer</p>
-            <a href="https://twitter.com/SusiBrauer">Twitter</a>
-            <a href="https://github.com/SusanneBrauer">Github</a>
-            <a href="http://www.susannebrauer.github.io/">Portfolio</a>
-            <a href="http://www.susannebrauer.com/">Coding Blog</a>
-          </footer>
+          <h2>Your Household</h2>
+          <table id="household-table">
+            <tr>
+              <th>Household Name</th>
+              <th>Number of Sims</th>
+              <th>Last Updated</th>
+            </tr>
+            <tr>
+              <td>Spencer-Kim-Lewis</td>
+              <td>5</td>
+              <td>11/06/2022</td>
+            </tr>
+            <tr>
+              <td>Goth</td>
+              <td>4</td>
+              <td>02/06/2022</td>
+            </tr>
+            <tr>
+              <td>Pancakes</td>
+              <td>2</td>
+              <td>25/05/2022</td>
+            </tr>
+            <tr>
+              <td>BFF</td>
+              <td>3</td>
+              <td>19/05/2022</td>
+            </tr>
+            <tr>
+              <td>Caliente</td>
+              <td>4</td>
+              <td>11/05/2022</td>
+            </tr>
+          </table>
+
+          <h2>Simmers you follow</h2>
+          <table id="simmer-table">
+            <tr>
+              <th>On/Off</th>
+              <th>Simmer Name</th>
+              <th>Last Online</th>
+              <tr>
+                <td><img src="images/Icons/circle-on.svg" alt=""></td>
+                <td>JB_Sween</td>
+                <td>11/06/2022</td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/circle-on.svg" alt=""></td>
+                <td>JB17</td>
+                <td>11/06/2022</td>
+              </tr>
+              <tr>
+                <td><img src="images/Icons/circle-off.svg" alt=""></td>
+                <td>Just Tidge</td>
+                <td>25/05/2022</td>
+              </tr>
+            </tr>
+          </table>
+        </main>
+        <footer>
+          <p>&copy;2022 by Susanne Brauer</p>
+          <a href="https://twitter.com/SusiBrauer" id="twitter-link">Twitter</a>
+          <a href="https://github.com/SusanneBrauer" id="github-link">Github</a>
+          <a href="http://www.susannebrauer.github.io/" id="pf-link">Portfolio</a>
+          <a href="http://www.susannebrauer.com/" id="cb-link">Coding Blog</a>
+          <a href="#" id="contact-link">Contact</a>
+        </footer>
     </body>
 </html>
