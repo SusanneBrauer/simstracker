@@ -100,6 +100,10 @@ table tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 
+.no-mobile-column {
+  display: none;
+}
+
 .button {
   background-color: #21b96b;
   border: 3px solid #ffffff;
@@ -284,6 +288,12 @@ main p {
   margin-bottom: 30px;
 }
 
+#household-table table,
+#simmer-table table {
+  width: 100%;
+  margin-top: 10px;
+}
+
 footer {
   border-top: 3px dotted #a6e329;
   padding-bottom: 15px;
@@ -326,7 +336,8 @@ footer a{
     column-gap: 16px;
   }
 
-  h1 {
+  h1,
+  h2 {
     grid-column-start: 1;
     grid-column-end: 7;
   }
@@ -400,6 +411,26 @@ footer a{
   .login-form .button {
     grid-column-start: 2;
     grid-column-end: 4;
+  }
+
+  #new-household-button {
+    grid-column-start: 4;
+    grid-column-end: 7;
+  }
+
+  #profile-button {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  #household-table,
+  #simmer-table {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+
+  .no-mobile-column {
+    display: table-cell;
   }
 
   footer {
@@ -485,6 +516,18 @@ footer a{
   .login-form {
     grid-column-start: 5;
     grid-column-end: 11;
+  }
+
+  #household-table {
+    grid-column: 2 / 8;
+    grid-row: 2 / 5;
+  }
+
+  #profile-button,
+  #new-household-button,
+  #simmer-table {
+    grid-column-start: 8;
+    grid-column-end: 14;
   }
 
   footer {
