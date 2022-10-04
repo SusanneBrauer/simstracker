@@ -38,7 +38,6 @@ h2 {
   font-family: SimsSans;
   grid-column-start: 1;
   grid-column-end: 5;
-  margin-top: 30px;
 }
 
 p {
@@ -343,7 +342,7 @@ footer a{
   }
   
   header {
-    height: 140px;
+    height: 160px;
     margin-bottom: 15px;
   }
 
@@ -374,6 +373,7 @@ footer a{
   #signup-sim {
     grid-column-start: 3;
     grid-column-end: 5;
+    margin-bottom: 40px;
   }
 
   #signup-button {
@@ -388,6 +388,7 @@ footer a{
     grid-column-end: 6;
     width: 100%;
     margin-bottom: 40px;
+    margin-top: 40px;
   }
 
   #sign-up-form {
@@ -464,6 +465,7 @@ footer a{
   h1 {
     grid-column-start: 2;
     grid-column-end: 14;
+    margin-bottom: 20px;
   }
   
   header,
@@ -491,6 +493,7 @@ footer a{
     display: block;
     grid-column-start: 5;
     grid-column-end: 13;
+    max-width: 1020px;
   }
 
   #login-button {
@@ -499,7 +502,7 @@ footer a{
   }
 
   main {
-    grid-template-rows: auto 65px 50px 90px auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
   }
 
   main p {
@@ -510,6 +513,7 @@ footer a{
   #signup-sim {
     grid-column-start: 3;
     grid-column-end: 7;
+    max-width: 400px;
   }
 
   .signup-form {
@@ -525,11 +529,7 @@ footer a{
   #household-table {
     grid-column: 2 / 8;
     grid-row: 2 / 7;
-    align-self: stretch;
-    margin-top: 0;
-  }
-
-  #household-table table {
+    align-self: start;
     margin-top: 0;
   }
 
@@ -543,6 +543,7 @@ footer a{
   #profile-button {
     grid-row: 3/4;
     margin-top: 0;
+    margin-bottom: 40px;
   }
 
   #new-household-button {
