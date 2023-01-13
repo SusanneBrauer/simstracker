@@ -47,6 +47,11 @@ p {
   line-height: 30px;
 }
 
+a {
+  color: #a6e329;
+  text-decoration: none;
+}
+
 table {
   border-spacing: 0;
   border-collapse: separate;
@@ -114,6 +119,7 @@ table tr:last-child td:last-child {
   align-self: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 15px;
   box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -203,7 +209,8 @@ main p {
   margin-top: 40px;
 }
 
-#signup-button {
+#signup-button,
+.household-mobile-buttons {
   grid-column-start: 2;
   grid-column-end: 4;
   margin-top: 40px;
@@ -234,20 +241,27 @@ main p {
 }
 
 .signup-form-mobile,
-.login-form {
+.login-form,
+.household-form-mobile {
   grid-column-start: 1;
   grid-column-end: 5;
+}
+
+.signup-form-mobile,
+.login-form {
   margin: 200px 0;
 }
 .signup-form-mobile #sign-up-form,
-.login-form {
+.login-form,
+.household-form-mobile {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
 }
 
 .signup-form-mobile label,
-.login-form label {
+.login-form label,
+.household-form-mobile label {
   font-family: "Barlow", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -256,14 +270,17 @@ main p {
 }
 
 .signup-form-mobile input,
-.login-form input {
+.login-form input,
+.household-form-mobile input,
+.household-form-mobile select {
   width: 100%;
   border: 3px solid #4276b7;
   border-radius: 8px;
 }
 
 .signup-form-mobile .button,
-.login-form .button {
+.login-form .button,
+.household-form-mobile .button {
   display: block;
   width: 100%;
   margin-top: 15px;
