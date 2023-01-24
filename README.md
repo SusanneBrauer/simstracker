@@ -4,7 +4,7 @@
 
 ## Status
 
-HTML Setup (work in progress)
+first pages written as static HTML (see list in task list)
 
 ## Table of Contents
 
@@ -26,8 +26,12 @@ I want to build a website to track all kinds of detials for Sims of The Sims 4. 
 **General Plan:** start to set everything up written as static page and add interactivity and actual functionality as I make progress
 
 **Tasks:**  
-[ ] logged out landing page with sign up form  
+[x] logged out landing page with sign up form
+[x] dashboard
+[x] create new household mobile
+[x] create new household desktop
+[x] login
 [ ] Household Summary  
 [ ] Sim Summary  
-[ ] Profile/Account Summary
+[ ] Profile Summary
 [ ] collect assests
