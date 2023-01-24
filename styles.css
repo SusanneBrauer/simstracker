@@ -318,6 +318,42 @@ main p {
   margin-top: 10px;
 }
 
+.cardHolder {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.LHCard {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.RHCard {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.detailCard {
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.detailCardHeading {
+  background-color: #21b96b;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 3px solid #ffffff;
+  font-weight: bold;
+  height: 50%;
+}
+
 footer {
   border-top: 3px dotted #a6e329;
   padding-bottom: 15px;
