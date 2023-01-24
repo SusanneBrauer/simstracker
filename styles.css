@@ -232,6 +232,10 @@ main p {
   width: 100%;
   border: 3px solid #4276b7;
   border-radius: 8px;
+  text-align: center;
+  font-family: "Barlow", "Arial", sans-serif;;
+  color: #4276b7;
+  font-size: 18px;
 }
 
 .signup-form .button {
@@ -276,6 +280,10 @@ main p {
   width: 100%;
   border: 3px solid #4276b7;
   border-radius: 8px;
+  text-align: center;
+  font-family: "Barlow", "Arial", sans-serif;;
+  color: #4276b7;
+  font-size: 18px;
 }
 
 .signup-form-mobile .button,
@@ -353,7 +361,9 @@ footer a{
   }
 
   h1,
-  h2 {
+  h2,
+  #newHouseholdCustom,
+  #newHouseholdPremade  {
     grid-column-start: 1;
     grid-column-end: 7;
   }
@@ -431,14 +441,12 @@ footer a{
     grid-column-end: 4;
   }
 
-  #new-household-button,
-  #newHouseholdCustom {
+  #new-household-button {
     grid-column-start: 4;
     grid-column-end: 7;
   }
 
-  #profile-button,
-  #newHouseholdPremade {
+  #profile-button {
     grid-column-start: 1;
     grid-column-end: 4;
   }
