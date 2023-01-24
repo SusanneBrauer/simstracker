@@ -431,12 +431,14 @@ footer a{
     grid-column-end: 4;
   }
 
-  #new-household-button {
+  #new-household-button,
+  #newHouseholdCustom {
     grid-column-start: 4;
     grid-column-end: 7;
   }
 
-  #profile-button {
+  #profile-button,
+  #newHouseholdPremade {
     grid-column-start: 1;
     grid-column-end: 4;
   }
@@ -543,7 +545,8 @@ footer a{
     grid-column-end: 11;
   }
 
-  #household-table {
+  #household-table,
+  #newHouseholdPremade {
     grid-column: 2 / 8;
     grid-row: 2 / 7;
     align-self: start;
@@ -552,7 +555,8 @@ footer a{
 
   #profile-button,
   #new-household-button,
-  #simmer-table {
+  #simmer-table,
+  #newHouseholdCustom {
     grid-column-start: 8;
     grid-column-end: 14;
   }
