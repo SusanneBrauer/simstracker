@@ -376,7 +376,6 @@ main p {
   background-color: #21b96b;
   border-radius: 8px 8px 0 0;
   font-weight: bold;
-  height: 50px;
   width: 100%;
 }
 
@@ -475,7 +474,8 @@ footer a{
   }
 
   .signup-form,
-  .login-form {
+  .login-form,
+  .householdPicture {
     display: block;
     grid-template-columns: repeat(4, 1fr);
     grid-column-start: 2;
@@ -483,6 +483,12 @@ footer a{
     width: 100%;
     margin-bottom: 40px;
     margin-top: 40px;
+  }
+
+  .cardHolder,
+  #householdSummaryGallery {
+    grid-column-start: 2;
+    grid-column-end: 6;
   }
 
   #sign-up-form {
@@ -654,6 +660,37 @@ footer a{
 
   #simmer-table h2 {
     margin-top: 0px;
+  }
+
+  .householdPicture {
+    grid-column-start: 6;
+    grid-column-end: 10;
+  }
+
+  .cardHolder,
+  #householdSummaryGallery {
+    grid-column-start: 3;
+    grid-column-end: 13;
+  }
+
+  .card1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .card2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .card3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .card4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
   }
 
   footer {
