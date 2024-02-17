@@ -663,11 +663,17 @@ footer a{
   }
 
   .householdPicture {
-    grid-column-start: 6;
-    grid-column-end: 10;
+    grid-column-start: 4;
+    grid-column-end: 8;
   }
 
-  .cardHolder,
+  .cardHolder {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    height: 345px;
+    align-self: center;
+  }
+
   #householdSummaryGallery {
     grid-column-start: 3;
     grid-column-end: 13;
