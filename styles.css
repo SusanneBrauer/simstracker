@@ -318,6 +318,14 @@ main p {
   margin-top: 10px;
 }
 
+.householdPicture {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  border-radius: 8px;
+  border: 3px solid #ffffff;
+}
+
 .cardHolder,
 #householdSummaryGallery {
   display: grid;
@@ -339,7 +347,8 @@ main p {
   grid-column-end: 5;
 }
 
-.detailCard {
+.detailCard,
+.galleryPictureCard {
   border: 3px solid #ffffff;
   border-radius: 8px;
   display: flex;
@@ -356,24 +365,24 @@ main p {
 }
 
 .householdSummaryGalleryPicture {
-  border: 3px solid #ffffff;
-  border-radius: 8px;
-}
-
-.householdSummaryGalleryPicture img {
+  border-top: 3px solid #ffffff;
+  border-radius: 0 0 8px 8px;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .householdSummaryGalleryPictureHeading {
   background-color: #21b96b;
   border-radius: 8px 8px 0 0;
-  border-bottom: 3px solid #ffffff;
   font-weight: bold;
-  height:50px;
+  height: 50px;
+  width: 100%;
 }
 
 .householdSummaryGalleryPictureHeading p{
   line-height: 50px;
+  margin: 0;
 }
 
 footer {
