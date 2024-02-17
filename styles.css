@@ -329,7 +329,7 @@ main p {
 .cardHolder,
 #householdSummaryGallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   column-gap: 16px;
   grid-column-start: 1;
   grid-column-end: 5;
@@ -337,14 +337,20 @@ main p {
   margin-bottom: 15px;
 }
 
+#householdSummaryGallery h2 {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  margin: 15px;
+}
+
 .LHCard {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 5;
 }
 
 .RHCard {
-  grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 9;
 }
 
 .detailCard,
@@ -491,6 +497,18 @@ footer a{
     grid-column-end: 6;
   }
 
+  .card1,
+  .card3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .card2,
+  .card4 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+  }
+
   #sign-up-form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -561,7 +579,7 @@ footer a{
   }
 }
 
-@media only screen and (min-width:1420px) {
+@media only screen and (min-width:1200px) {
   h1 {
     grid-column-start: 2;
     grid-column-end: 14;
@@ -681,22 +699,22 @@ footer a{
 
   .card1 {
     grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  .card2 {
-    grid-column-start: 2;
     grid-column-end: 3;
   }
 
-  .card3 {
+  .card2 {
     grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-end: 5;
+  }
+
+  .card3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
   }
 
   .card4 {
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-start: 7;
+    grid-column-end: 9;
   }
 
   footer {
@@ -735,5 +753,42 @@ footer a{
   #contact-link {
     grid-column-start: 13;
     grid-column-end: 15;
+  }
+}
+
+@media only screen and (min-width:1750px) {
+  .LHCard {
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+  
+  .RHCard {
+    grid-column-start: 5;
+    grid-column-end: 8;
+  }
+  
+  .card1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .card2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .card3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .card4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  .card5 {
+    grid-column-start: 5;
+    grid-column-end: 6;
   }
 }
