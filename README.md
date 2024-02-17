@@ -26,12 +26,12 @@ I want to build a website to track all kinds of detials for Sims of The Sims 4. 
 **General Plan:** start to set everything up written as static page and add interactivity and actual functionality as I make progress
 
 **Tasks:**  
-[x] logged out landing page with sign up form
-[x] dashboard
-[x] create new household mobile
-[x] create new household desktop
-[x] login
-[ ] Household Summary  
+[x] logged out landing page with sign up form  
+[x] dashboard  
+[x] create new household mobile  
+[x] create new household desktop  
+[x] login  
+[x] Household Summary  
 [ ] Sim Summary  
-[ ] Profile Summary
-[ ] collect assests
+[ ] Profile Summary  
+[x] collect assests
