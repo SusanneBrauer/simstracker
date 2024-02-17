@@ -318,7 +318,8 @@ main p {
   margin-top: 10px;
 }
 
-.cardHolder {
+.cardHolder,
+#householdSummaryGallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 16px;
@@ -352,6 +353,27 @@ main p {
   border-bottom: 3px solid #ffffff;
   font-weight: bold;
   height: 50%;
+}
+
+.householdSummaryGalleryPicture {
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+}
+
+.householdSummaryGalleryPicture img {
+  width: 100%;
+}
+
+.householdSummaryGalleryPictureHeading {
+  background-color: #21b96b;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 3px solid #ffffff;
+  font-weight: bold;
+  height:50px;
+}
+
+.householdSummaryGalleryPictureHeading p{
+  line-height: 50px;
 }
 
 footer {
